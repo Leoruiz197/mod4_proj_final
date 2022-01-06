@@ -9,4 +9,14 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get()
+  getLista(): string[] {
+    return this.appService.getLista();
+  }
+
+  @Get()
+  getListaObj(): object[] {
+    return this.appService.getLista2();
+  }
 }
