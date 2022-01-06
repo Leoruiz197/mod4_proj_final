@@ -5,17 +5,17 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('hello')
   getHello(): string {
     return this.appService.getHello();
   }
 
-  @Get()
+  @Get('lista')
   getLista(): string[] {
     return this.appService.getLista();
   }
 
-  @Get()
+  @Get('listaobj')
   getListaObj(): object[] {
     return this.appService.getLista2();
   }
